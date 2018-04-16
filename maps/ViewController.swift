@@ -10,7 +10,8 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController {
-
+// Toronto 43.6532° N, 79.3832° W
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

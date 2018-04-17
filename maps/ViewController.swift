@@ -40,9 +40,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func seeInMapApp(_ sender: UIButton) {
-        let placemark = MKPlacemark(coordinate: self.mapLocation,  addressDictionary: nil)
+        let placemark = MKPlacemark(coordinate: self.map.centerCoordinate   ,  addressDictionary: nil)
         let mapitem = MKMapItem(placemark: placemark)
-        mapitem.name = "A really cool place"
+        mapitem.name = "Wonder where I am"
         mapitem.openInMaps(launchOptions:[
             MKLaunchOptionsMapTypeKey: MKMapType.standard.rawValue,
             MKLaunchOptionsMapCenterKey: self.map.region.center,
